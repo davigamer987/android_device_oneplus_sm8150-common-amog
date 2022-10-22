@@ -19,9 +19,9 @@ PRODUCT_PACKAGES += \
     AntHalService-Soong \
     com.dsi.ant@1.0.vendor
 
-# Alert slider
+# OPlusExtras
 PRODUCT_PACKAGES += \
-    KeyHandler \
+    OPlusExtras \
     tri-state-key-calibrate
 
 # APEX
@@ -224,6 +224,7 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     init.class_main.sh \
     init.oplus.rc \
+    init.oplus_extras.rc \
     init.oplus.sh \
     init.qcom.early_boot.sh \
     init.qcom.post_boot.sh \
@@ -311,7 +312,8 @@ PRODUCT_PACKAGES += \
     CarrierConfigResCommon \
     FrameworksResTarget \
     OPlusFrameworksResCommon \
-    OPlusSystemUIResCommon
+    OPlusSystemUIResCommon \
+    OPlusExtrasResCommon
 
 # Power
 PRODUCT_PACKAGES += \
