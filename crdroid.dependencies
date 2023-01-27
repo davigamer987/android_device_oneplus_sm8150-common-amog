@@ -6,7 +6,7 @@
   {
     "repository": "crdroidandroid/android_hardware_oplus",
     "target_path": "hardware/oplus",
-    "remote": "13.0-extras"
+    "branch": "13.0-extras"
   },
   {
     "repository": "crdroidandroid/proprietary_vendor_oneplus_sm8150-common",
