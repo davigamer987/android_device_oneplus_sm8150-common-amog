@@ -5,29 +5,8 @@
 -->
 <resources>
 
-    <!-- Should we vibrate on an icon animation of the shelf. This should only be active if the
-     vibrator is capable of subtle vibrations -->
-    <bool name="config_vibrateOnIconAnimation">true</bool>
-
-    <!-- Doze: does the double tap sensor need a proximity check? -->
-    <bool name="doze_double_tap_proximity_check">true</bool>
-
-    <!-- Doze: does the long press sensor need a proximity check? -->
-    <bool name="doze_long_press_proximity_check">true</bool>
-
-    <!-- FPSInfoService FPS node file path -->
-    <string name="config_fpsInfoSysNode" translatable="false">/sys/class/drm/sde-crtc-0/measured_fps</string>
-
-    <!-- Charging info current divider, if needed -->
-    <integer name="config_currentInfoDivider" translatable="false">1</integer>
-
-    <!-- Whether show refresh rate QS tile -->
-    <bool name="config_showRefreshRateQsTile">true</bool>
-
-    <!-- Update battery info every second when device is charging -->
-    <bool name="config_alternateFastchargeInfoUpdate">true</bool>
-
-    <!-- Preferred max refresh rate at AOD & Ambient Display, if supported by the display. -->
-    <integer name="config_aodMaxRefreshRate">60</integer>
+     <!-- Should we vibrate on an icon animation of the shelf. This should only be active if the
+          vibrator is capable of subtle vibrations -->
+     <bool name="config_vibrateOnIconAnimation">true</bool>
 
 </resources>

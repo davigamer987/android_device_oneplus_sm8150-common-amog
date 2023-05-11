@@ -10,6 +10,9 @@
          The default is false. -->
     <bool name="config_lidControlsSleep">true</bool>
 
+    <!-- True if camera app should be pinned via Pinner Service -->
+    <bool name="config_pinnerCameraApp">true</bool>
+
     <!-- True if home app should be pinned via Pinner Service -->
     <bool name="config_pinnerHomeApp">true</bool>
 
@@ -29,48 +32,37 @@
     <!-- Vibrator pattern for feedback about a long screen/key press -->
     <integer-array name="config_longPressVibePattern">
         <item>0</item>
-        <item>55</item>
+        <item>10</item>
     </integer-array>
 
     <!-- Vibrator pattern for feedback about touching a virtual key -->
     <integer-array name="config_virtualKeyVibePattern">
         <item>0</item>
-        <item>30</item>
+        <item>10</item>
     </integer-array>
 
     <!-- Vibrator pattern for a very short but reliable vibration for soft keyboard tap -->
     <integer-array name="config_keyboardTapVibePattern">
-        <item>20</item>
+        <item>10</item>
     </integer-array>
-
-    <!-- Enables or disables haptic effect when the text insertion/selection handle is moved
-         manually by the user. Off by default, since the expected haptic feedback may not be
-         available on some devices. -->
-    <bool name="config_enableHapticTextHandle">true</bool>
-
-    <!-- The default intensity level for haptic feedback. See
-         Settings.System.HAPTIC_FEEDBACK_INTENSITY more details on the constant values and
-         meanings. -->
-    <integer name="config_defaultHapticFeedbackIntensity">3</integer>
-
-    <!-- The default intensity level for notification vibrations. See
-         Settings.System.NOTIFICATION_VIBRATION_INTENSITY more details on the constant values and
-         meanings. -->
-    <integer name="config_defaultNotificationVibrationIntensity">3</integer>
-
-    <!-- The default intensity level for ring vibrations. See
-         Settings.System.RING_VIBRATION_INTENSITY more details on the constant values and
-         meanings. -->
-    <integer name="config_defaultRingVibrationIntensity">3</integer>
 
     <!-- Indicate available ColorDisplayManager.COLOR_MODE_xxx. -->
     <integer-array name="config_availableColorModes" />
 
+    <!-- Default list of files pinned by the Pinner Service -->
+    <string-array translatable="false" name="config_defaultPinnerServiceFiles">
+        <item>"/system/framework/framework.jar"</item>
+        <item>"/system/framework/services.jar"</item>
+        <item>"/apex/com.android.art/javalib/core-oj.jar"</item>
+        <item>"/apex/com.android.art/javalib/core-libart.jar"</item>
+        <item>"/system_ext/priv-app/SystemUI/SystemUI.apk"</item>
+        <item>"/system/bin/surfaceflinger"</item>
+    </string-array>
+
     <!-- Screen brightness used to dim the screen while dozing in a very low power state.
          May be less than the minimum allowed brightness setting
          that can be set by the user. -->
-    <integer name="config_screenBrightnessDoze">30</integer>
-    <item name="config_screenBrightnessDozeFloat" format="float" type="dimen">0.1</item>
+    <integer name="config_screenBrightnessDoze">17</integer>
 
     <!-- Control whether the always on display mode is enabled by default. This value will be used
          during initialization when the setting is still null. -->
@@ -116,16 +108,9 @@
     -->
     <bool name="config_powerDecoupleAutoSuspendModeFromDisplay">true</bool>
 
-    <!-- Smart charging -->
-    <bool name="config_smartChargingAvailable">true</bool>
-    <!-- Smart charging sysfs node and values for suspend/resume charging -->
-    <string name="config_smartChargingSysfsNode" translatable="false">/sys/class/power_supply/battery/mmi_charging_enable</string>
-    <string name="config_smartChargingSuspendValue" translatable="false">0</string>
-    <string name="config_smartChargingResumeValue" translatable="false">1</string>
+    <!-- Enables or disables haptic effect when the text insertion/selection handle is moved
+         manually by the user. Off by default, since the expected haptic feedback may not be
+         available on some devices. -->
+    <bool name="config_enableHapticTextHandle">true</bool>
 
-    <!-- Screen off UDFPS -->
-    <bool name="config_supportScreenOffUdfps">true</bool>
-
-    <!-- If true, the display will be shifted around in ambient mode. -->
-    <bool name="config_enableBurnInProtection">true</bool>
 </resources>
